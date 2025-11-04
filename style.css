@@ -25,6 +25,11 @@
     display: grid;
     grid-template-columns: 1fr 6fr;
     padding: 6px;
+    gap: 6px;
+}
+
+li > svg, .sidebar-title > svg {
+    padding-top: 3px;
 }
 
 svg {
@@ -70,7 +75,7 @@ svg {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    padding: 15px;
+    padding: 12px;
 }
 
 .projects-cards .card {
@@ -81,8 +86,20 @@ svg {
         gap: 16px;
 }
 
+.dashboard-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
 .title {
     font-weight: bold;
+}
+
+.announcements, .trending{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .announcements{
