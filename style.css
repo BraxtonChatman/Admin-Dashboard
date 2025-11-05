@@ -56,6 +56,22 @@ svg {
 .header {
     grid-column: 2 / 3;
     background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 18px;
+}
+
+.search, .header-icons, .header-buttons {
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+}
+
+input {
+    height: 25px;
+    width: 550px;
+    border-radius: 12px;
+    outline: none;
 }
 
 .dashboard {
@@ -106,11 +122,41 @@ svg {
     grid-row: 1 / 2;
 }
 
+hr {
+    color: rgba(128, 128, 128, 0.644);
+    
+}
+
+.announcement-container, .trending-container{
+    display: grid;
+    gap: 16px;
+}
+
 
 .announcement-container, .trending-container, .projects-cards .card {
     border-radius: 10px;
     background-color: white;
     padding: 22px;
+}
+
+.trending-card, .user-info{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 0px 12px;
+}
+
+.trending-card > img, .user-info > img{
+    grid-row: 1 / 3;
+}
+
+.trending-card > .title, .welcome-message{
+    align-self: end;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    clip-path: circle();
 }
 
 .html, .body {
