@@ -57,21 +57,60 @@ svg {
     grid-column: 2 / 3;
     background-color: white;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     padding: 18px;
+    gap: 5px;
 }
 
 .search, .header-icons, .header-buttons {
     display: flex;
     padding: 8px;
-    gap: 8px;
+    gap: 26px;
+}
+
+.search {
+    margin-left: 32px;
+}
+
+.header-icons{
+    margin-left: 100px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.header svg {
+    fill: black;
+    height: 30px;
 }
 
 input {
-    height: 25px;
-    width: 550px;
-    border-radius: 12px;
-    outline: none;
+    height: 30px;
+    width: 600px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(226, 232, 240);
+}
+
+#user-image {
+    justify-self: end;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.account-name {
+    font-size: 26px;
+}
+
+button {
+    background-color: rgb(25, 146, 212);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
 }
 
 .dashboard {
@@ -159,7 +198,3 @@ img {
     clip-path: circle();
 }
 
-.html, .body {
-    padding: 0;
-    margin: 0;
-}
