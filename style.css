@@ -37,17 +37,6 @@ svg {
     height: 24px;
 }
 
-.card-icons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-}
-
-.card-icons > svg {
-    fill: black;
-    height: 24px;
-}
-
 .sidebar div, .sidebar li {
     color: white;
     font-size: 22px;
@@ -131,6 +120,17 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     padding: 12px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.card-icons > svg {
+    fill: black;
+    height: 24px;
 }
 
 .projects-cards .card {
